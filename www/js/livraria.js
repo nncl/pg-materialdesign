@@ -1,6 +1,5 @@
 ﻿$('.collection-item').on('click', function () {
-    var $badge = $('.badge', this),
-        count = $(this).find("span");
+    var $badge = $('.badge', this);
 
     if ($badge.length == 0 || $badge.text() == "") {
         $badge = $('<span class="badge brown-text">0</span>')
