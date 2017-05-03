@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Livraria da turma MOB - Fiap</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="topo-fixo z-depth-1">
+        <div class="teal darken-4 white-text valign-wrapper">
+            <h5 class="titulo">Livraria da MOB</h5>
+            <div>
+                <i data-activates="submenu" data-gutter="5" data-contrainwidth="false" class="material-icons waves-effect waves-light
+waves-circle dropdown-button">more_vert</i>
+            </div>
+            <ul class="dropdown-content" id="submenu">
+                <li><a class="black-text acao-limpar" href="">Limpar</a></li>
+            </ul>
+        </div>
+
+        <ul class="tabs teal darken-4">
+            <li class="tab"><a href="#livros" class="waves-effect waves-light
+ white-text">Livros</a></li>
+            <li class="tab"><a href="#revistas" class="waves-effect waves-light
+ white-text">Revistas</a></li>
+            <li class="tab"><a href="#materiais" class="waves-effect waves-light
+ white-text">Materiais</a></li>
+        </ul>
+    </div>
+
+    <div class="section" id="livros">
+        <h6 class="container">Informática</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Java Web Services<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">JQuery Mobile<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">Desenvolvendo com Angular 2<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">O tempo e o Vento<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">A Cabana<span class="badge brown-text"></span> 
+</a>
+        </div>
+    </div>
+
+    <div class="section" id="revistas">
+        <h6 class="container">Revistas</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Java Magazine<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">Exame Informática<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">Engenharia Civil<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">Veja São Paulo<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">Caras<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">Contigo!<span class="badge brown-text"></span> 
+</a>
+        </div>
+    </div>
+
+    <div class="section" id="materiais">
+        <h6 class="container">Materiais</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Caderno Brochura<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">Régua 30 cm<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">Borracha<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">Mochila<span class="badge brown-text"></span> 
+</a>
+            <a class="collection-item waves-effect black-text">Estojo<span class="badge brown-text"></span> 
+</a>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a href="#confirmacao" id="confirmar" class="btn-floating btn-large
+ waves-effect waves-light blue modal-trigger">
+            <i class="material-icons">done</i>
+        </a>
+    </div>
+
+    <div class="modal modal-fixed-footer" id="confirmacao">
+        <div class="modal-content">
+            <h5>Resumo dos itens selecionados</h5>
+            <input type="number" class="validate" placeholder="Número do vendedor" id="numero-vendedor">
+            <blockquote id="resumo"></blockquote>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-footer">
+                <button class="btn deep-orange waves-effect waves-light modal-close">
+                Concluir
+                </button>
+                <button class="acao-limpar btn-flat waves-effect waves-red modal-close">
+                Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
